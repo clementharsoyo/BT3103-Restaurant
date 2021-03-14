@@ -1,0 +1,30 @@
+<template>
+  <div class="chart">
+    <ul id="routerList">
+        <li><router-link to="/" exact>Home</router-link></li>
+        <li><router-link to="/orders" exact>Orders</router-link></li>
+        <li><router-link to="/dashboard" exact>Dashboard</router-link></li>
+    </ul>
+    <h1>Order Summary in Bar Chart</h1>
+    <chart></chart>
+  </div>
+</template>
+
+<script>
+import Chart from "./BarChart.js";
+export default {
+  components: {
+    Chart
+  }
+};
+</script>
+
+<style>
+#routerList {
+  width: 100%;
+  max-width: 100%;
+  margin: 0px;
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+</style>
